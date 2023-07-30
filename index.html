@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <input type="text" name="" id="display" value = '' disabled>
+        <!-- <section class="screen" id="display">
+            0
+        </section> -->
+
+        <section class="calc-buttons">
+
+            <div class="calc-button-row">
+                <button class="calc-button double" onclick="clearDisplay()">C</button>
+                <button class="calc-button" onclick="deleteDigit()">&larr;</button>
+                <button class="calc-button" onclick="appendOperator('/')">/</button>
+            </div>
+
+            <div class="calc-button-row">
+                <button class="calc-button" onclick="appendDigit('7')">7</button>
+                <button class="calc-button" onclick="appendDigit('8')">8</button>
+                <button class="calc-button" onclick="appendDigit('9')">9</button>
+                <button class="calc-button" onclick="appendOperator('*')">*</button>
+            </div>
+
+            <div class="calc-button-row">
+                <button class="calc-button" onclick="appendDigit('4')">4</button>
+                <button class="calc-button" onclick="appendDigit('5')">5</button>
+                <button class="calc-button" onclick="appendDigit('6')">6</button>
+                <button class="calc-button" onclick="appendOperator('-')">-</button>
+            </div>
+
+            <div class="calc-button-row">
+                <button class="calc-button" onclick="appendDigit('1')">1</button>
+                <button class="calc-button" onclick="appendDigit('2')">2</button>
+                <button class="calc-button" onclick="appendDigit('3')">3</button>
+                <button class="calc-button" onclick="appendOperator('+')">+</button>
+            </div>
+
+            <div class="calc-button-row">
+                <button class="calc-button triple" onclick="appendDigit('0')">0</button>
+                <button class="calc-button" onclick="calculate()">=</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
